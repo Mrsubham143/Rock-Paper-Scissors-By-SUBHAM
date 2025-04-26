@@ -14,19 +14,19 @@ const genCompChoice = () => {
 };
 
 const drawGame = () => {
-    msg.innerText = "Game was draw. \u{1F412} Play Again!";
+    msg.innerText = "Game was draw. \u{1F412}! Play Again!";
 };
 
 const showWinner = (userWin, userChoice, compChoice) => {
     if(userWin) {
         userScore++;
         userScorePara.innerText = userScore;
-        msg.innerText = `YOU WIN \u{1F604} Your ${userChoice} beats ${compChoice}`;
+        msg.innerText = `YOU WIN.\u{1F604}!Your ${userChoice} beats ${compChoice}`;
         msg.style.backgroundColor = "green";
     } else {
         compScore++;
         compScorePara.innerText = compScore;
-        msg.innerText = `YOU LOST \u{1F62D} ${compChoice} beats ${userChoice}`;
+        msg.innerText = `YOU LOST.\u{1F62D}! ${compChoice} beats ${userChoice}`;
         msg.style.backgroundColor = "red";
     }
 };
