@@ -1,0 +1,125 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    text-align: center;
+}
+
+body{
+    background-image: url(2nd\ game2.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+h1{
+    background-color: rgb(244, 237, 237);
+    color: rgb(255, 5, 5);
+    height: 5rem;
+    line-height: 5rem;
+    animation: blinking 2s ease-in-out 1s infinite  ;
+}
+
+@keyframes blinking {
+    0%{
+        text-shadow: 0 0 10px
+        rgba(0, 0, 0, 50);
+    }
+    50%{
+        text-shadow: 0 0 20px
+        rgba(0, 0, 0, 70);
+    }
+    100%{
+        text-shadow: 0 0 10px
+        rgba(0, 0, 0, 100);
+    }
+}
+
+
+.choice:hover{
+    opacity: 60%;
+    border: 5px solid black;
+    border-radius: 50%;
+    transform: scale(0.9)
+    rotate(50deg);
+    animation: new 2s ease-in-out 1ms infinite;
+}
+
+@keyframes new {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.imgs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+    animation: spining 2s ease-in-out 1ms infinite;
+}
+
+@keyframes spining {
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(50px);
+    }
+}
+.choice{
+    height: 100px;
+    width: 100px;
+}
+
+img{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    
+}
+
+
+
+.score-board{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    font-size: 30px;
+    gap: 5rem;
+}
+
+#user-score,#comp-score{
+    font-size: 5rem;
+    color: #03fb03;
+}
+
+#comp-score{
+    color: red;
+    font-size: 5rem;
+}
+
+#user,#comp{
+    background-color: #03055b;
+    color: #ffff00;
+    border: 5px solid transparent;
+    border-radius: 100%;
+}
+
+.msg-container{
+    margin-top: 50px;
+}
+
+#msg{
+    font-size: 2rem;
+    background-color: black;
+    color: whitesmoke;
+    display: inline;
+    padding: 10px;
+    border-radius: 16px;
+}
